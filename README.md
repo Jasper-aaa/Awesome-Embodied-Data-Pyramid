@@ -1,7 +1,8 @@
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](#)
+# Awesome Embodied Data [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](#)
 
-# Awesome Embodied Data — A Data Pyramid for Robotics & Embodied AI
+<p align="center">
+  <img src="assets/data_pyramid.png" alt="Embodied Data Pyramid" width="100%">
+</p>
 
 This repository accompanies a survey on the **data pyramid** for robotics and embodied AI. It curates the datasets, data-collection paradigms, simulators, and data-hungry model families reviewed in the survey — spanning **real-robot data**, **UMI (in-the-wild) data**, **simulation data**, **egocentric / ego-exo human data**, and broad **general (web-scale) data** — together with the **VLA / world-action / embodied-VLM** models that consume them. Each entry links to its paper, project page, and code where available.
 
@@ -9,35 +10,13 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 
 ## Table of Contents
 
-- [The Data Pyramid: Data Sources](#the-data-pyramid-data-sources)
-  - [Real-Robot Data](#real-robot-data)
-  - [UMI Data](#umi-data)
-  - [Simulation Data](#simulation-data)
-    - [Simulation Infrastructure & Assets](#simulation-infrastructure-assets)
-    - [Benchmarks & Simulation Datasets](#benchmarks-simulation-datasets)
-    - [World Models as Simulators](#world-models-as-simulators)
-  - [Egocentric & Ego-Exo Data](#egocentric-ego-exo-data)
-  - [General Data](#general-data)
-    - [Visual Data](#visual-data)
-    - [Segmentation & Localization](#segmentation-localization)
-    - [Video & Temporal Data](#video-temporal-data)
-    - [Planning / Task Decomposition](#planning-task-decomposition)
-    - [Grasp Data](#grasp-data)
-- [Models Built on the Data Pyramid](#models-built-on-the-data-pyramid)
-  - [Vision-Language-Action (VLA) Models](#vision-language-action-vla-models)
-    - [Action-Labeled Data](#action-labeled-data)
-    - [Action-Free Data](#action-free-data)
-  - [World Action Models (WAM)](#world-action-models-wam)
-    - [Action-Related Data](#action-related-data)
-    - [Action-Free Data](#action-free-data-1)
-  - [Embodied Vision-Language Models (VLM)](#embodied-vision-language-models-vlm)
-    - [Data for Embodied Understanding](#data-for-embodied-understanding)
-    - [Data for Physical Grounding](#data-for-physical-grounding)
-- [Challenges & Future Directions](#challenges-future-directions)
-  - [Cross-Embodiment State](#cross-embodiment-state)
-  - [Egocentric Priors for Dexterous Hands](#egocentric-priors-for-dexterous-hands)
-  - [Failure & Recovery-Centric Learning](#failure-recovery-centric-learning)
-  - [Data Recipe](#data-recipe)
+**Data Sources:** [Real-Robot](#real-robot-data) · [UMI](#umi-data) · [Simulation](#simulation-data) · [Ego/Ego-Exo](#egocentric-ego-exo-data) · [General](#general-data)
+
+**Model Families:** [VLA](#vision-language-action-vla-models) · [WAM](#world-action-models-wam) · [Embodied VLM](#embodied-vision-language-models-vlm)
+
+**Challenges:** [Cross-Embodiment State](#cross-embodiment-state) · [Dexterous Ego Priors](#egocentric-priors-for-dexterous-hands) · [Failure & Recovery](#failure-recovery-centric-learning) · [Data Recipe](#data-recipe)
+
+**Community:** [Contributing](#contributing)
 
 # The Data Pyramid: Data Sources
 
@@ -85,7 +64,6 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2025 | ICRA | EgoMimic | [EgoMimic: Scaling Imitation Learning via Egocentric Video](https://arxiv.org/abs/2410.24221) | [![link](https://img.shields.io/badge/Website-9cf)](https://egomimic.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-EgoMimic-ff8800?logo=github)](https://github.com/SimarKareer/EgoMimic) |
 | 2025 | arXiv | EgoVLA | [EgoVLA: Learning Vision-Language-Action Models from Egocentric Human Videos](https://arxiv.org/abs/2507.12440) | [![link](https://img.shields.io/badge/Website-9cf)](https://rchalyang.github.io/EgoVLA/) | [![GitHub](https://img.shields.io/badge/GitHub-EgoVLA_Release-ff8800?logo=github)](https://github.com/RchalYang/EgoVLA_Release) |
 | 2025 |  | FMB | [FMB: a Functional Manipulation Benchmark for Generalizable Robotic Learning](https://arxiv.org/abs/2401.08553) | [![link](https://img.shields.io/badge/Website-9cf)](https://functional-manipulation-benchmark.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-fmb-ff8800?logo=github)](https://github.com/rail-berkeley/fmb) |
-| 2025 |  | FurnitureBench | [FurnitureBench: Reproducible Real-World Benchmark for Long-Horizon Complex Manipulation](https://arxiv.org/abs/2305.12821) | [![link](https://img.shields.io/badge/Website-9cf)](https://clvrai.github.io/furniture-bench/) | [![GitHub](https://img.shields.io/badge/GitHub-furniture--bench-ff8800?logo=github)](https://github.com/clvrai/furniture-bench) |
 | 2025 | arXiv | G0 | [Galaxea Open-World Dataset and G0 Dual-System VLA Model](https://arxiv.org/abs/2509.00576) | [![link](https://img.shields.io/badge/Website-9cf)](https://opengalaxea.github.io/G0/) | [![GitHub](https://img.shields.io/badge/GitHub-GalaxeaVLA-ff8800?logo=github)](https://github.com/OpenGalaxea/GalaxeaVLA) |
 | 2025 | arXiv | Humanoid Everyday | [Humanoid Everyday: A Comprehensive Robotic Dataset for Open-World Humanoid Manipulation](https://arxiv.org/abs/2510.08807) | [![link](https://img.shields.io/badge/Website-9cf)](https://humanoideveryday.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-Humanoid--Everyday-ff8800?logo=github)](https://github.com/physical-superintelligence-lab/Humanoid-Everyday) |
 | 2025 | arXiv | METIS | [METIS: Multi-Source Egocentric Training for Integrated Dexterous Vision-Language-Action Model](https://arxiv.org/abs/2511.17366) | [![link](https://img.shields.io/badge/Website-9cf)](https://aureleopku.github.io/METIS/) | [![GitHub](https://img.shields.io/badge/GitHub-Metis-ff8800?logo=github)](https://github.com/AureleoPKU/Metis) |
@@ -93,7 +71,6 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2025 |  | RealSource-World | RealSource-World: A Large-Scale Real-World Dual-Arm Manipulation Dataset | [![link](https://img.shields.io/badge/Website-9cf)](https://realmanrobot.github.io/real_source_dataset) |  |
 | 2025 | arXiv | REASSEMBLE | [REASSEMBLE: A Multimodal Dataset for Contact-rich Robotic Assembly and Disassembly](https://arxiv.org/abs/2502.05086) | [![link](https://img.shields.io/badge/Website-9cf)](https://tuwien-asl.github.io/REASSEMBLE_page/) | [![GitHub](https://img.shields.io/badge/GitHub-REASSEMBLE-ff8800?logo=github)](https://github.com/TUWIEN-ASL/REASSEMBLE) |
 | 2025 | arXiv | RoboCOIN | [RoboCOIN: An Open-Sourced Bimanual Robotic Data Collection for Integrated Manipulation](https://arxiv.org/abs/2511.17441) | [![link](https://img.shields.io/badge/Website-9cf)](https://flagopen.github.io/RoboCOIN/) | [![GitHub](https://img.shields.io/badge/GitHub-RoboCOIN-ff8800?logo=github)](https://github.com/FlagOpen/RoboCOIN) |
-| 2025 | RSS | RoboMIND | [RoboMIND: Benchmark on Multi-embodiment Intelligence Normative Data for Robot Manipulation](https://arxiv.org/abs/2412.13877) | [![link](https://img.shields.io/badge/Website-9cf)](https://x-humanoid-robomind.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-x--humanoid--robomind.github.io-ff8800?logo=github)](https://github.com/x-humanoid-robomind/x-humanoid-robomind.github.io) |
 | 2025 | RSS | RoboMIND | [RoboMIND: Benchmark on Multi-embodiment Intelligence Normative Data for Robot Manipulation](https://arxiv.org/abs/2412.13877) | [![link](https://img.shields.io/badge/Website-9cf)](https://x-humanoid-robomind.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-x--humanoid--robomind.github.io-ff8800?logo=github)](https://github.com/x-humanoid-robomind/x-humanoid-robomind.github.io) |
 | 2025 | arXiv | RoboMIND 2.0 | [RoboMIND 2.0: A Multimodal, Bimanual Mobile Manipulation Dataset for Generalizable Embodied Intelligence](https://arxiv.org/abs/2512.24653) | [![link](https://img.shields.io/badge/Website-9cf)](https://x-humanoid-robomind.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-x--humanoid--robomind.github.io-ff8800?logo=github)](https://github.com/x-humanoid-robomind/x-humanoid-robomind.github.io) |
 | 2025 |  | Sirius | [Robot Learning on the Job: Human-in-the-Loop Autonomy and Learning During Deployment](https://arxiv.org/abs/2211.08416) | [![link](https://img.shields.io/badge/Website-9cf)](https://ut-austin-rpl.github.io/sirius/) | [![GitHub](https://img.shields.io/badge/GitHub-sirius-ff8800?logo=github)](https://github.com/UT-Austin-RPL/sirius) |
@@ -566,3 +543,13 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2015 | arXiv | AVI-HT | [AVI-HT: Adaptive Vision-IMU Fusion for 3D Hand Tracking](https://arxiv.org/abs/2605.21714) |  |  |
 
 ---
+
+# Contributing
+
+This is an active repository and your contributions are always welcome!
+
+If you would like to add a resource, please open a pull request with the paper, project page, and code links where available. I may keep some pull requests open when I am not sure whether they fit this awesome list; you can vote for them by adding :+1: to the PR.
+
+---
+
+If you have any question about this opinionated list, do not hesitate to open an issue or start a discussion in this repository.
