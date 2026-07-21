@@ -1,7 +1,8 @@
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](#)
+# Awesome Embodied Data [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](#)
 
-# Awesome Embodied Data — A Data Pyramid for Robotics & Embodied AI
+<p align="center">
+  <img src="assets/data_pyramid.png" alt="Embodied Data Pyramid" width="100%">
+</p>
 
 This repository accompanies a survey on the **data pyramid** for robotics and embodied AI. It curates the datasets, data-collection paradigms, simulators, and data-hungry model families reviewed in the survey — spanning **real-robot data**, **UMI (in-the-wild) data**, **simulation data**, **egocentric / ego-exo human data**, and broad **general (web-scale) data** — together with the **VLA / world-action / embodied-VLM** models that consume them. Each entry links to its paper, project page, and code where available.
 
@@ -9,35 +10,13 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 
 ## Table of Contents
 
-- [The Data Pyramid: Data Sources](#the-data-pyramid-data-sources)
-  - [Real-Robot Data](#real-robot-data)
-  - [UMI Data](#umi-data)
-  - [Simulation Data](#simulation-data)
-    - [Simulation Infrastructure & Assets](#simulation-infrastructure-assets)
-    - [Benchmarks & Simulation Datasets](#benchmarks-simulation-datasets)
-    - [World Models as Simulators](#world-models-as-simulators)
-  - [Egocentric & Ego-Exo Data](#egocentric-ego-exo-data)
-  - [General Data](#general-data)
-    - [Visual Data](#visual-data)
-    - [Segmentation & Localization](#segmentation-localization)
-    - [Video & Temporal Data](#video-temporal-data)
-    - [Planning / Task Decomposition](#planning-task-decomposition)
-    - [Grasp Data](#grasp-data)
-- [Models Built on the Data Pyramid](#models-built-on-the-data-pyramid)
-  - [Vision-Language-Action (VLA) Models](#vision-language-action-vla-models)
-    - [Action-Labeled Data](#action-labeled-data)
-    - [Action-Free Data](#action-free-data)
-  - [World Action Models (WAM)](#world-action-models-wam)
-    - [Action-Related Data](#action-related-data)
-    - [Action-Free Data](#action-free-data-1)
-  - [Embodied Vision-Language Models (VLM)](#embodied-vision-language-models-vlm)
-    - [Data for Embodied Understanding](#data-for-embodied-understanding)
-    - [Data for Physical Grounding](#data-for-physical-grounding)
-- [Challenges & Future Directions](#challenges-future-directions)
-  - [Cross-Embodiment State](#cross-embodiment-state)
-  - [Egocentric Priors for Dexterous Hands](#egocentric-priors-for-dexterous-hands)
-  - [Failure & Recovery-Centric Learning](#failure-recovery-centric-learning)
-  - [Data Recipe](#data-recipe)
+**Data Sources:** [Real-Robot](#real-robot-data) · [UMI](#umi-data) · [Simulation](#simulation-data) · [Ego/Ego-Exo](#egocentric-ego-exo-data) · [General](#general-data)
+
+**Model Families:** [VLA](#vision-language-action-vla-models) · [WAM](#world-action-models-wam) · [Embodied VLM](#embodied-vision-language-models-vlm)
+
+**Challenges:** [Cross-Embodiment State](#cross-embodiment-state) · [Dexterous Ego Priors](#egocentric-priors-for-dexterous-hands) · [Failure & Recovery](#failure-recovery-centric-learning) · [Data Recipe](#data-recipe)
+
+**Community:** [Contributing](#contributing)
 
 # The Data Pyramid: Data Sources
 
@@ -549,3 +528,13 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2015 | arXiv | AVI-HT | [AVI-HT: Adaptive Vision-IMU Fusion for 3D Hand Tracking](https://arxiv.org/abs/2605.21714) |  |  |
 
 ---
+
+# Contributing
+
+This is an active repository and your contributions are always welcome!
+
+If you would like to add a resource, please open a pull request with the paper, project page, and code links where available. I may keep some pull requests open when I am not sure whether they fit this awesome list; you can vote for them by adding :+1: to the PR.
+
+---
+
+If you have any question about this opinionated list, do not hesitate to open an issue or start a discussion in this repository.
