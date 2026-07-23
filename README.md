@@ -12,68 +12,68 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 
 ## Table of Contents
 
-<details>
+<details open>
 <summary><strong>Data Sources</strong></summary>
 
 - [The Data Pyramid: Data Sources](#the-data-pyramid-data-sources)
 
-<details>
+<details open>
 <summary>Real-Robot Data</summary>
 
-- [Real-Robot Data](#real-robot-data)
-- Table: recent real-robot datasets
-- Foldout table: more entries (2024 and earlier)
+- [Section: Real-Robot Data](#real-robot-data)
+- [Table: Recent real-robot datasets](#table-real-robot-recent)
+- [Table: Real-robot datasets (2024 and earlier)](#table-real-robot-2024-and-earlier)
 
 </details>
 
-<details>
+<details open>
 <summary>UMI Data</summary>
 
-- [UMI Data](#umi-data)
-- Table: UMI-style robot-free and cross-embodiment datasets
+- [Section: UMI Data](#umi-data)
+- [Table: UMI-style robot-free and cross-embodiment datasets](#table-umi-data)
 
 </details>
 
-<details>
+<details open>
 <summary>Simulation Data</summary>
 
-- [Simulation Data](#simulation-data)
-- [3D Assets & Scene Datasets](#3d-assets--scene-datasets)
-- [Simulation & Rendering Backends](#simulation--rendering-backends)
-- [Benchmarks](#benchmarks)
-- [Simulation/Synthetic Datasets & Data-Generation Systems](#simulationsynthetic-datasets--data-generation-systems)
-- [World Models as Simulators](#world-models-as-simulators)
+- [Section: Simulation Data](#simulation-data)
+- [Table: 3D assets and scene datasets](#table-simulation-assets-scenes)
+- [Table: Simulation and rendering backends](#table-simulation-rendering-backends)
+- [Table: Simulation benchmarks](#table-simulation-benchmarks)
+- [Table: Simulation/synthetic datasets and data-generation systems](#table-simulation-synthetic-datasets)
+- [Table: World models as simulators](#table-world-models-as-simulators)
 
 </details>
 
-<details>
+<details open>
 <summary>Egocentric & Ego-Exo Data</summary>
 
-- [Egocentric & Ego-Exo Data](#egocentric--ego-exo-data)
-- Table: egocentric and ego-exo human data
-- Foldout table: more entries (2024 and earlier)
+- [Section: Egocentric & Ego-Exo Data](#egocentric--ego-exo-data)
+- [Table: Recent egocentric and ego-exo datasets](#table-egocentric-ego-exo-recent)
+- [Table: Egocentric and ego-exo datasets (2024 and earlier)](#table-egocentric-ego-exo-2024-and-earlier)
 
 </details>
 
-<details>
+<details open>
 <summary>General Data</summary>
 
-- [General Data](#general-data)
-- [Visual Data](#visual-data)
-- [Segmentation & Localization](#segmentation--localization)
-- [Video & Temporal Data](#video--temporal-data)
-- [Planning / Task Decomposition](#planning--task-decomposition)
-- [Grasp Data](#grasp-data)
+- [Section: General Data](#general-data)
+- [Table: Visual data](#table-general-visual-data)
+- [Table: Segmentation and localization data](#table-general-segmentation-localization)
+- [Table: Video and temporal data](#table-general-video-temporal)
+- [Table: Planning and task decomposition data](#table-general-planning-task-decomposition)
+- [Table: Grasp data](#table-general-grasp-data)
 
 </details>
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Embodied Foundation Models</strong></summary>
 
-- [Embodied Foundation Models](#embodied-foundation-models)
-- [Representative VLA and WAM Methods](#representative-vla-and-wam-methods)
+- [Section: Embodied Foundation Models](#embodied-foundation-models)
+- [Table: Representative VLA and WAM methods](#table-embodied-foundation-models-vla-wam)
 
 </details>
 
@@ -82,6 +82,9 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 ## The Data Pyramid: Data Sources
 
 ### Real-Robot Data
+
+<details open id="table-real-robot-recent">
+<summary>Table: Recent real-robot datasets</summary>
 
 | Year | Dataset | Paper | Scale | Venue | Project | Repo@GitHub |
 |------|---------|-------|-------|-------|---------|-------------|
@@ -108,8 +111,10 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2025 | RoboCOIN | [RoboCOIN: An Open-Sourced Bimanual Robotic Data Collection for Integrated Manipulation](https://arxiv.org/abs/2511.17441) | 180K trajectories |  | [![link](https://img.shields.io/badge/Website-9cf)](https://flagopen.github.io/RoboCOIN/) | [![GitHub](https://img.shields.io/badge/GitHub-RoboCOIN-ff8800?logo=github)](https://github.com/FlagOpen/RoboCOIN) |
 | 2025 | RoboMIND 2.0 | [RoboMIND 2.0: A Multimodal, Bimanual Mobile Manipulation Dataset for Generalizable Embodied Intelligence](https://arxiv.org/abs/2512.24653) | 310K trajectories |  | [![link](https://img.shields.io/badge/Website-9cf)](https://modelscope.cn/datasets/X-Humanoid/RoboMIND2.0/) | [![GitHub](https://img.shields.io/badge/GitHub-RoboMIND_2.0-ff8800?logo=github)](https://github.com/x-humanoid-robomind/x-humanoid-robomind.github.io) |
 
-<details>
-<summary>More entries (2024 and earlier)</summary>
+</details>
+
+<details open id="table-real-robot-2024-and-earlier">
+<summary>Table: Real-robot datasets (2024 and earlier)</summary>
 
 | Year | Dataset | Paper | Scale | Venue | Project | Repo@GitHub |
 |------|---------|-------|-------|-------|---------|-------------|
@@ -141,6 +146,9 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 
 ### UMI Data
 
+<details open id="table-umi-data">
+<summary>Table: UMI-style robot-free and cross-embodiment datasets</summary>
+
 | Year | Dataset | Paper | Scale | Venue | Project | Repo@GitHub |
 |------|---------|-------|-------|-------|---------|-------------|
 | 2026 | HuMI | [Humanoid Manipulation Interface: Humanoid Whole-Body Manipulation from Robot-Free Demonstrations](https://arxiv.org/abs/2602.06643) | 827 trajectories |  | [![link](https://img.shields.io/badge/Website-9cf)](https://humanoid-manipulation-interface.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-HuMI-ff8800?logo=github)](hhttps://github.com/Richard-coder-Nai/HuMI) |
@@ -165,12 +173,17 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2024 | UMI-on-Legs | [UMI on Legs: Making Manipulation Policies Mobile with Manipulation-Centric Whole-body Controllers](https://openreview.net/forum?id=3i7j8ZPnbm) | 514 trajectories | CoRL | [![link](https://img.shields.io/badge/Website-9cf)](https://umi-on-legs.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-UMI--on--Legs-ff8800?logo=github)](https://github.com/real-stanford/umi-on-legs) |
 | 2024 | Fast-UMI | [Fast-UMI: A Scalable and Hardware-Independent Universal Manipulation Interface](https://arxiv.org/abs/2409.19499) | 8965 trajectories | CORL | [![link](https://img.shields.io/badge/Website-9cf)](https://www.fastumi.com/FastUMI/index.html) | [![GitHub](https://img.shields.io/badge/GitHub-FastUMI-ff8800?logo=github)](https://github.com/zxzm-zak/FastUMI_Data) |
 
+</details>
+
 
 ### Simulation Data
 
 > **Curation note.** For peer-reviewed work, `Year` and `Publication / Type` use the formal publication year and venue. For arXiv-only work, `Year` is the first public preprint year. Software without a canonical paper is labeled `Software`. The sections below distinguish reusable 3D/scene assets, simulation backends, evaluation benchmarks, and both downloadable synthetic datasets and systems that generate such data.
 
 #### 3D Assets & Scene Datasets
+
+<details open id="table-simulation-assets-scenes">
+<summary>Table: 3D assets and scene datasets</summary>
 
 | Year | Resource / Acronym | Reference | Publication / Type | Project | Official Code |
 |------|---------|-------|-------|---------|-------------|
@@ -193,7 +206,12 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2017 | Matterport3D | [Matterport3D: Learning from RGB-D Data in Indoor Environments](https://arxiv.org/abs/1709.06158) | 3DV | [![link](https://img.shields.io/badge/Website-9cf)](https://niessner.github.io/Matterport/) | [![GitHub](https://img.shields.io/badge/GitHub-Matterport-ff8800?logo=github)](https://github.com/niessner/Matterport) |
 | 2015 | ShapeNet | [ShapeNet: An Information-Rich 3D Model Repository](https://arxiv.org/abs/1512.03012) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://shapenet.org) |  |
 
+</details>
+
 #### Simulation & Rendering Backends
+
+<details open id="table-simulation-rendering-backends">
+<summary>Table: Simulation and rendering backends</summary>
 
 | Year | Resource / Acronym | Reference | Publication / Type | Project | Official Code |
 |------|---------|-------|-------|---------|-------------|
@@ -229,7 +247,12 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2013 | V-REP (now CoppeliaSim) | [V-REP: A Versatile and Scalable Robot Simulation Framework](https://doi.org/10.1109/IROS.2013.6696520) | IROS | [![link](https://img.shields.io/badge/Website-9cf)](https://www.coppeliarobotics.com/) |  |
 | 2012 | MuJoCo | [MuJoCo: A physics engine for model-based control](https://ieeexplore.ieee.org/document/6386109) | IROS | [![link](https://img.shields.io/badge/Website-9cf)](https://mujoco.org) | [![GitHub](https://img.shields.io/badge/GitHub-mujoco-ff8800?logo=github)](https://github.com/google-deepmind/mujoco) |
 
+</details>
+
 #### Benchmarks
+
+<details open id="table-simulation-benchmarks">
+<summary>Table: Simulation benchmarks</summary>
 
 | Year | Resource / Acronym | Reference | Publication / Type | Project | Official Code |
 |------|---------|-------|-------|---------|-------------|
@@ -270,7 +293,12 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2020 | SoftGym | [SoftGym: Benchmarking Deep Reinforcement Learning for Deformable Object Manipulation](https://arxiv.org/abs/2011.07215) | CoRL | [![link](https://img.shields.io/badge/Website-9cf)](https://sites.google.com/view/softgym) | [![GitHub](https://img.shields.io/badge/GitHub-softgym-ff8800?logo=github)](https://github.com/Xingyu-Lin/softgym) |
 | 2019 | Meta-World | [Meta-World: A Benchmark and Evaluation for Multi-Task and Meta Reinforcement Learning](https://arxiv.org/abs/1910.10897) | CoRL | [![link](https://img.shields.io/badge/Website-9cf)](https://meta-world.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-Metaworld-ff8800?logo=github)](https://github.com/Farama-Foundation/Metaworld) |
 
+</details>
+
 #### Simulation/Synthetic Datasets & Data-Generation Systems
+
+<details open id="table-simulation-synthetic-datasets">
+<summary>Table: Simulation/synthetic datasets and data-generation systems</summary>
 
 | Year | Resource / Acronym | Reference | Publication / Type | Project | Official Code |
 |------|---------|-------|-------|---------|-------------|
@@ -289,7 +317,12 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2021 | ACRONYM | [ACRONYM: A Large-Scale Grasp Dataset Based on Simulation](https://arxiv.org/abs/2011.09584) | ICRA / dataset | [![link](https://img.shields.io/badge/Website-9cf)](https://sites.google.com/nvidia.com/graspdataset) | [![GitHub](https://img.shields.io/badge/GitHub-acronym-ff8800?logo=github)](https://github.com/NVlabs/acronym) |
 | 2021 | robomimic | [What Matters in Learning from Offline Human Demonstrations for Robot Manipulation](https://arxiv.org/abs/2108.03298) | CoRL / framework & simulated human demonstrations | [![link](https://img.shields.io/badge/Website-9cf)](https://robomimic.github.io/study/) | [![GitHub](https://img.shields.io/badge/GitHub-robomimic-ff8800?logo=github)](https://github.com/ARISE-Initiative/robomimic) |
 
+</details>
+
 #### World Models as Simulators
+
+<details open id="table-world-models-as-simulators">
+<summary>Table: World models as simulators</summary>
 
 | Year | Acronym | Paper | Venue | Project | Repo@GitHub |
 |------|---------|-------|-------|---------|-------------|
@@ -320,8 +353,13 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2018 | World Models | [Recurrent World Models Facilitate Policy Evolution](https://arxiv.org/abs/1809.01999) | NeurIPS | [![link](https://img.shields.io/badge/Website-9cf)](https://worldmodels.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-WorldModelsExperiments-ff8800?logo=github)](https://github.com/hardmaru/WorldModelsExperiments) |
 | 2016 |  | [DeepMind Lab](https://arxiv.org/abs/1612.03801) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://deepmind.google/blog/open-sourcing-deepmind-lab/) | [![GitHub](https://img.shields.io/badge/GitHub-lab-ff8800?logo=github)](https://github.com/google-deepmind/lab) |
 
+</details>
+
 
 ### Egocentric & Ego-Exo Data
+
+<details open id="table-egocentric-ego-exo-recent">
+<summary>Table: Recent egocentric and ego-exo datasets</summary>
 
 | Year | Acronym | Paper | Venue | Project | Repo@GitHub |
 |------|---------|-------|-------|---------|-------------|
@@ -356,8 +394,10 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2025 | HD-EPIC | [HD-EPIC: A Highly-Detailed Egocentric Video Dataset](https://arxiv.org/abs/2502.04144) | CVPR | [![link](https://img.shields.io/badge/Website-9cf)](https://hd-epic.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-hd--epic--annotations-ff8800?logo=github)](https://github.com/hd-epic/hd-epic-annotations) |
 | 2025 | EgoMe | [EgoMe: A New Dataset and Challenge for Following Me via Egocentric View in Real World](https://arxiv.org/abs/2501.19061) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://huggingface.co/datasets/HeqianQiu/EgoMe) |  |
 
-<details>
-<summary>More entries (2024 and earlier)</summary>
+</details>
+
+<details open id="table-egocentric-ego-exo-2024-and-earlier">
+<summary>Table: Egocentric and ego-exo datasets (2024 and earlier)</summary>
 
 | Year | Acronym | Paper | Venue | Project | Repo@GitHub |
 |------|---------|-------|-------|---------|-------------|
@@ -419,6 +459,9 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 
 #### Visual Data
 
+<details open id="table-general-visual-data">
+<summary>Table: Visual data</summary>
+
 | Year | Acronym | Paper | Venue | Project | Repo@GitHub |
 |------|---------|-------|-------|---------|-------------|
 | 2025 | FiRE | [FiRE: Enhancing MLLMs with Fine-Grained Context Learning for Complex Image Retrieval](https://dl.acm.org/doi/10.1145/3726302.3729979) |  |  |  |
@@ -443,7 +486,12 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2014 | COCO | [Microsoft COCO: Common Objects in Context](https://arxiv.org/abs/1405.0312) | ECCV | [![link](https://img.shields.io/badge/Website-9cf)](https://cocodataset.org) | [![GitHub](https://img.shields.io/badge/GitHub-cocoapi-ff8800?logo=github)](https://github.com/cocodataset/cocoapi) |
 |  | Objects365 | [Objects365: A Large-Scale, High-Quality Dataset for Object Detection](https://ieeexplore.ieee.org/document/9009553) |  | [![link](https://img.shields.io/badge/Website-9cf)](https://www.objects365.org/) |  |
 
+</details>
+
 #### Segmentation & Localization
+
+<details open id="table-general-segmentation-localization">
+<summary>Table: Segmentation and localization data</summary>
 
 | Year | Acronym | Paper | Venue | Project | Repo@GitHub |
 |------|---------|-------|-------|---------|-------------|
@@ -462,7 +510,12 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2015 | ORB-SLAM | [ORB-SLAM: A Versatile and Accurate Monocular SLAM System](https://arxiv.org/abs/1502.00956) |  | [![link](https://img.shields.io/badge/Website-9cf)](https://webdiis.unizar.es/~raulmur/orbslam/) | [![GitHub](https://img.shields.io/badge/GitHub-ORB_SLAM-ff8800?logo=github)](https://github.com/raulmur/ORB_SLAM) |
 | 2012 |  | [Indoor Segmentation and Support Inference from RGBD Images](https://link.springer.com/chapter/10.1007/978-3-642-33715-4_54) | ECCV | [![link](https://img.shields.io/badge/Website-9cf)](https://cs.nyu.edu/~silberman/projects/indoor_scene_seg_sup.html) |  |
 
+</details>
+
 #### Video & Temporal Data
+
+<details open id="table-general-video-temporal">
+<summary>Table: Video and temporal data</summary>
 
 | Year | Acronym | Paper | Venue | Project | Repo@GitHub |
 |------|---------|-------|-------|---------|-------------|
@@ -482,7 +535,12 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 |  | OCR-VQA | [OCR-VQA: Visual Question Answering by Reading Text in Images](https://ieeexplore.ieee.org/document/8978122/) |  | [![link](https://img.shields.io/badge/Website-9cf)](https://ocr-vqa.github.io/) |  |
 |  | RobAVA | [RobAVA: A Large-scale Dataset and Baseline Towards Video-based Robotic Arm Action Understanding](https://openaccess.thecvf.com/content/ICCV2025/papers/Sun_RobAVA_A_Large-scale_Dataset_and_Baseline_Towards_Video_based_Robotic_ICCV_2025_paper.pdf) |  |  | [![GitHub](https://img.shields.io/badge/GitHub-RobAVA-ff8800?logo=github)](https://github.com/Sunbaoli/RobAVA) |
 
+</details>
+
 #### Planning / Task Decomposition
+
+<details open id="table-general-planning-task-decomposition">
+<summary>Table: Planning and task decomposition data</summary>
 
 | Year | Acronym | Paper | Venue | Project | Repo@GitHub |
 |------|---------|-------|-------|---------|-------------|
@@ -492,7 +550,12 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2022 | EgoTaskQA | [EgoTaskQA: Understanding Human Tasks in Egocentric Videos](https://arxiv.org/abs/2210.03929) |  | [![link](https://img.shields.io/badge/Website-9cf)](https://sites.google.com/view/egotaskqa) | [![GitHub](https://img.shields.io/badge/GitHub-EgoTaskQA-ff8800?logo=github)](https://github.com/Buzz-Beater/EgoTaskQA) |
 |  | WAP | WAP |  |  |  |
 
+</details>
+
 #### Grasp Data
+
+<details open id="table-general-grasp-data">
+<summary>Table: Grasp data</summary>
 
 | Year | Acronym | Paper | Venue | Project | Repo@GitHub |
 |------|---------|-------|-------|---------|-------------|
@@ -504,6 +567,8 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2018 | Jacquard | [Jacquard: A Large Scale Dataset for Robotic Grasp Detection](https://arxiv.org/abs/1803.11469) | IROS | [![link](https://img.shields.io/badge/Website-9cf)](https://jacquard.liris.cnrs.fr) |  |
 |  | GraspNet-1Billion | [GraspNet-1Billion: A Large-Scale Benchmark for General Object Grasping](https://openaccess.thecvf.com/content_CVPR_2020/html/Fang_GraspNet-1Billion_A_Large-Scale_Benchmark_for_General_Object_Grasping_CVPR_2020_paper.html) |  | [![link](https://img.shields.io/badge/Website-9cf)](https://graspnet.net) | [![GitHub](https://img.shields.io/badge/GitHub-graspnet--baseline-ff8800?logo=github)](https://github.com/graspnet/graspnet-baseline) |
 
+</details>
+
 ## Embodied Foundation Models
 
 ### Representative VLA and WAM Methods
@@ -512,8 +577,8 @@ Representative VLA and WAM methods by release time, model type, institution, and
 
 Data sources: `Real` = real-robot data; `Ego` = egocentric data; `UMI` = UMI data; `Sim` = simulation data; `General` = general data.
 
-<details open>
-<summary>Representative VLA and WAM methods table (66 entries)</summary>
+<details open id="table-embodied-foundation-models-vla-wam">
+<summary>Table: Representative VLA and WAM methods (66 entries)</summary>
 
 | Time | Method | Institution | Model | Data |
 |------|--------|-------------|-------|------|
