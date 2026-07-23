@@ -2,6 +2,8 @@
 
 <p align="center">
   <img src="assets/data_pyramid.png" alt="Embodied Data Pyramid" width="100%">
+  <br>
+  <a href="assets/data_pyramid.pdf">High-resolution PDF</a>
 </p>
 
 This repository accompanies a survey on the **data pyramid** for robotics and embodied AI. It curates the datasets, data-collection paradigms, simulators, and data-hungry model families reviewed in the survey — spanning **real-robot data**, **UMI (in-the-wild) data**, **simulation data**, **egocentric / ego-exo human data**, and broad **general (web-scale) data** — together with the **VLA / world-action / embodied-VLM** models that consume them. Each entry links to its paper, project page, and code where available.
