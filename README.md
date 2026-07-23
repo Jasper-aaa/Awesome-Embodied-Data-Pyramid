@@ -14,9 +14,7 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 
 **Data Sources:** [Real-Robot](#real-robot-data) · [UMI](#umi-data) · [Simulation](#simulation-data) · [Ego/Ego-Exo](#egocentric-ego-exo-data) · [General](#general-data)
 
-**Model Families:** [VLA](#vision-language-action-vla-models) · [WAM](#world-action-models-wam) · [Embodied VLM](#embodied-vision-language-models-vlm)
-
-**Challenges:** [Cross-Embodiment State](#cross-embodiment-state) · [Dexterous Ego Priors](#egocentric-priors-for-dexterous-hands) · [Failure & Recovery](#failure-recovery-centric-learning) · [Data Recipe](#data-recipe)
+**Methods:** [Representative VLA and WAM Methods](#representative-vla-and-wam-methods)
 
 **Community:** [Contributing](#contributing)
 
@@ -411,155 +409,80 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2018 | Jacquard | [Jacquard: A Large Scale Dataset for Robotic Grasp Detection](https://arxiv.org/abs/1803.11469) | IROS | [![link](https://img.shields.io/badge/Website-9cf)](https://jacquard.liris.cnrs.fr) |  |
 |  | GraspNet-1Billion | [GraspNet-1Billion: A Large-Scale Benchmark for General Object Grasping](https://openaccess.thecvf.com/content_CVPR_2020/html/Fang_GraspNet-1Billion_A_Large-Scale_Benchmark_for_General_Object_Grasping_CVPR_2020_paper.html) |  | [![link](https://img.shields.io/badge/Website-9cf)](https://graspnet.net) | [![GitHub](https://img.shields.io/badge/GitHub-graspnet--baseline-ff8800?logo=github)](https://github.com/graspnet/graspnet-baseline) |
 
-## Models Built on the Data Pyramid
+## Representative VLA and WAM Methods
 
-### Vision-Language-Action (VLA) Models
+Representative VLA and WAM methods by release time, model type, institution, and data source.
 
-#### Action-Labeled Data
+Data sources: `Real` = real-robot data; `Ego` = egocentric data; `UMI` = UMI data; `Sim` = simulation data; `General` = general data.
 
-| Year | Acronym | Paper | Venue | Project | Repo@GitHub |
-|------|---------|-------|-------|---------|-------------|
-| 2026 | Being-H0.5 | [Being-H0.5: Scaling Human-Centric Robot Learning for Cross-Embodiment Generalization](https://arxiv.org/abs/2601.12993) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://research.beingbeyond.com/being-h05) | [![GitHub](https://img.shields.io/badge/GitHub-Being--H-ff8800?logo=github)](https://github.com/BeingBeyond/Being-H) |
-| 2026 | EgoScale | [EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data](https://arxiv.org/abs/2602.16710) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://research.nvidia.com/labs/gear/egoscale/) |  |
-| 2026 | InternVLA-A1 | [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](https://arxiv.org/abs/2601.02456) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://internrobotics.github.io/internvla-a1.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-InternVLA--A1-ff8800?logo=github)](https://github.com/InternRobotics/InternVLA-A1) |
-| 2026 | UniDex | [UniDex: A Robot Foundation Suite for Universal Dexterous Hand Control from Egocentric Human Videos](https://arxiv.org/abs/2603.22264) | CVPR | [![link](https://img.shields.io/badge/Website-9cf)](https://unidex-ai.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-UniDex-ff8800?logo=github)](https://github.com/unidex-ai/UniDex) |
-| 2025 | DiffusionVLA | [DiffusionVLA: Scaling Robot Foundation Models via Unified Diffusion and Autoregression](https://arxiv.org/abs/2412.03293) | ICML | [![link](https://img.shields.io/badge/Website-9cf)](https://diffusion-vla.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-DexVLA-ff8800?logo=github)](https://github.com/juruobenruo/DexVLA) |
-| 2025 | GR00T N1 | [GR00T N1: An Open Foundation Model for Generalist Humanoid Robots](https://arxiv.org/abs/2503.14734) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://developer.nvidia.com/isaac/gr00t) | [![GitHub](https://img.shields.io/badge/GitHub-Isaac--GR00T-ff8800?logo=github)](https://github.com/NVIDIA/Isaac-GR00T) |
-| 2025 | H2R | [H2R: A Human-to-Robot Data Augmentation for Robot Pre-training from Videos](https://arxiv.org/abs/2505.11920) | arXiv |  |  |
-| 2025 | RDT-1B | [RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation](https://arxiv.org/abs/2410.07864) | ICLR | [![link](https://img.shields.io/badge/Website-9cf)](https://rdt-robotics.github.io/rdt-robotics/) | [![GitHub](https://img.shields.io/badge/GitHub-RoboticsDiffusionTransformer-ff8800?logo=github)](https://github.com/thu-ml/RoboticsDiffusionTransformer) |
-| 2025 | SmolVLA | [SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics](https://arxiv.org/abs/2506.01844) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://huggingface.co/blog/smolvla) | [![GitHub](https://img.shields.io/badge/GitHub-lerobot-ff8800?logo=github)](https://github.com/huggingface/lerobot) |
-| 2025 | π0.5 | [π0.5: a Vision-Language-Action Model with Open-World Generalization](https://arxiv.org/abs/2504.16054) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://www.physicalintelligence.company/blog/pi05) | [![GitHub](https://img.shields.io/badge/GitHub-openpi-ff8800?logo=github)](https://github.com/Physical-Intelligence/openpi) |
-| 2025 | InternVLA-M1 | [InternVLA-M1: A Spatially Guided Vision-Language-Action Framework for Generalist Robot Policy](https://arxiv.org/abs/2510.13778) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://internrobotics.github.io/internvla-m1.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-InternVLA--M1-ff8800?logo=github)](https://github.com/InternRobotics/InternVLA-M1) |
-| 2025 | SAM2Act | [SAM2Act: Integrating Visual Foundation Model with A Memory Architecture for Robotic Manipulation](https://arxiv.org/abs/2501.18564) | ICML | [![link](https://img.shields.io/badge/Website-9cf)](https://sam2act.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-sam2act-ff8800?logo=github)](https://github.com/sam2act/sam2act) |
-| 2024 | Octo | [Octo: An Open-Source Generalist Robot Policy](https://arxiv.org/abs/2405.12213) | RSS | [![link](https://img.shields.io/badge/Website-9cf)](https://octo-models.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-octo-ff8800?logo=github)](https://github.com/octo-models/octo) |
-| 2024 | OpenVLA | [OpenVLA: An Open-Source Vision-Language-Action Model](https://arxiv.org/abs/2406.09246) | CoRL | [![link](https://img.shields.io/badge/Website-9cf)](https://openvla.github.io) | [![GitHub](https://img.shields.io/badge/GitHub-openvla-ff8800?logo=github)](https://github.com/openvla/openvla) |
-| 2023 | RT-2 | [RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control](https://arxiv.org/abs/2307.15818) | CoRL | [![link](https://img.shields.io/badge/Website-9cf)](https://robotics-transformer2.github.io/) |  |
-| 2022 | DexMV | [DexMV: Imitation Learning for Dexterous Manipulation from Human Videos](https://arxiv.org/abs/2108.05877) | ECCV | [![link](https://img.shields.io/badge/Website-9cf)](https://yzqin.github.io/dexmv/) | [![GitHub](https://img.shields.io/badge/GitHub-dexmv--sim-ff8800?logo=github)](https://github.com/yzqin/dexmv-sim) |
-| 2015 | VideoDex | [Learning Dexterity from Human Hand Motion in Internet Videos](https://doi.org/10.1177/02783649241227559) |  | [![link](https://img.shields.io/badge/Website-9cf)](https://video-dex.github.io/) |  |
-
-#### Action-Free Data
-
-| Year | Acronym | Paper | Venue | Project | Repo@GitHub |
-|------|---------|-------|-------|---------|-------------|
-| 2026 | ACoT-VLA | [ACoT-VLA: Action Chain-of-Thought for Vision-Language-Action Models](https://arxiv.org/abs/2601.11404) | CVPR |  | [![GitHub](https://img.shields.io/badge/GitHub-ACoT--VLA-ff8800?logo=github)](https://github.com/AgibotTech/ACoT-VLA) |
-| 2026 | AffordanceVLA | [AffordanceVLA: A Vision-Language-Action Model Empowering Action Generation through Affordance-Aware Understanding](https://arxiv.org/abs/2606.06155) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://skywalker-yqz.github.io/AffordanceVLA/) | [![GitHub](https://img.shields.io/badge/GitHub-AffordanceVLA-ff8800?logo=github)](https://github.com/Skywalker-yqz/AffordanceVLA) |
-| 2026 | CLAP | [CLAP: Contrastive Latent Action Pretraining for Learning Vision-Language-Action Models from Human Videos](https://arxiv.org/abs/2601.04061) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://lin-shan.com/CLAP/) | [![GitHub](https://img.shields.io/badge/GitHub-OpenCLAP-ff8800?logo=github)](https://github.com/LinShan-Bin/OpenCLAP) |
-| 2026 | ConLA | [ConLA: Contrastive Latent Action Learning from Human Videos for Robotic Manipulation](https://arxiv.org/abs/2602.00557) | arXiv |  | [![GitHub](https://img.shields.io/badge/GitHub-ConLA-ff8800?logo=github)](https://github.com/WeishengDAI/ConLA) |
-| 2026 | DualCoT-VLA | [DualCoT-VLA: Visual-Linguistic Chain of Thought via Parallel Reasoning for Vision-Language-Action Models](https://arxiv.org/abs/2603.22280) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://livfour.github.io/DualCoT-VLA/) | [![GitHub](https://img.shields.io/badge/GitHub-DualCoT--VLA-ff8800?logo=github)](https://github.com/Livfour/DualCoT-VLA) |
-| 2026 | HALO | [HALO: A Unified Vision-Language-Action Model for Embodied Multimodal Chain-of-Thought Reasoning](https://arxiv.org/abs/2602.21157) | arXiv |  | [![GitHub](https://img.shields.io/badge/GitHub-HALO-ff8800?logo=github)](https://github.com/qshou-coder/HALO) |
-| 2025 | Actron3D | [Actron3D: Learning Actionable Neural Functions from Videos for Transferable Robotic Manipulation](https://arxiv.org/abs/2510.12971) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://dipan-zhang.github.io/Actron3D-project/) |  |
-| 2025 | Being-H0 | [Being-H0: Vision-Language-Action Pretraining from Large-Scale Human Videos](https://arxiv.org/abs/2507.15597) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://beingbeyond.github.io/Being-H0/) | [![GitHub](https://img.shields.io/badge/GitHub-Being--H0-ff8800?logo=github)](https://github.com/BeingBeyond/Being-H0) |
-| 2025 | CoA-VLA | [CoA-VLA: Improving Vision-Language-Action Models via Visual-Text Chain-of-Affordance](https://arxiv.org/abs/2412.20451) | ICCV | [![link](https://img.shields.io/badge/Website-9cf)](https://chain-of-affordance.github.io/) |  |
-| 2025 | CoT-VLA | [CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models](https://arxiv.org/abs/2503.22020) | CVPR | [![link](https://img.shields.io/badge/Website-9cf)](https://research.nvidia.com/labs/cosmos-lab/cot-vla/) |  |
-| 2025 | GR-3 | [GR-3 Technical Report](https://arxiv.org/abs/2507.15493) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://seed.bytedance.com/GR3) |  |
-| 2025 | LAPA | [Latent Action Pretraining from Videos](https://arxiv.org/abs/2410.11758) | ICLR | [![link](https://img.shields.io/badge/Website-9cf)](https://latentactionpretraining.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-LAPA-ff8800?logo=github)](https://github.com/LatentActionPretraining/LAPA) |
-| 2025 | Moto | [Moto: Latent Motion Token as the Bridging Language for Learning Robot Manipulation from Videos](https://arxiv.org/abs/2412.04445) | ICCV | [![link](https://img.shields.io/badge/Website-9cf)](https://chenyi99.github.io/moto/) | [![GitHub](https://img.shields.io/badge/GitHub-Moto-ff8800?logo=github)](https://github.com/TencentARC/Moto) |
-| 2025 | UniVLA | [UniVLA: Learning to Act Anywhere with Task-centric Latent Actions](https://arxiv.org/abs/2505.06111) | arXiv |  | [![GitHub](https://img.shields.io/badge/GitHub-UniVLA-ff8800?logo=github)](https://github.com/OpenDriveLab/UniVLA) |
-| 2025 | VidBot | [VidBot: Learning Generalizable 3D Actions from In-the-Wild 2D Human Videos for Zero-Shot Robotic Manipulation](https://arxiv.org/abs/2503.07135) | CVPR | [![link](https://img.shields.io/badge/Website-9cf)](https://hanzhic.github.io/vidbot-project/) | [![GitHub](https://img.shields.io/badge/GitHub-vidbot-ff8800?logo=github)](https://github.com/HanzhiC/vidbot) |
-| 2025 | villa-X | [villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models](https://arxiv.org/abs/2507.23682) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://microsoft.github.io/villa-x/) | [![GitHub](https://img.shields.io/badge/GitHub-villa--x-ff8800?logo=github)](https://github.com/microsoft/villa-x) |
-| 2025 | ViSA-Flow | [ViSA-Flow: Accelerating Robot Skill Learning via Large-Scale Video Semantic Action Flow](https://arxiv.org/abs/2505.01288) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://visaflow-web.github.io/ViSAFLOW) |  |
-| 2024 | General Flow | [General Flow as Foundation Affordance for Scalable Robot Learning](https://arxiv.org/abs/2401.11439) | CoRL | [![link](https://img.shields.io/badge/Website-9cf)](https://general-flow.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-general_flow-ff8800?logo=github)](https://github.com/michaelyuancb/general_flow) |
-| 2024 | HRP | [HRP: Human Affordances for Robotic Pre-Training](https://arxiv.org/abs/2407.18911) | RSS | [![link](https://img.shields.io/badge/Website-9cf)](https://hrp-robot.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-data4robotics-ff8800?logo=github)](https://github.com/SudeepDasari/data4robotics) |
-| 2024 | RAM | [RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation](https://arxiv.org/abs/2407.04689) | CoRL | [![link](https://img.shields.io/badge/Website-9cf)](https://yuxuank.com/RAM/) | [![GitHub](https://img.shields.io/badge/GitHub-RAM_code-ff8800?logo=github)](https://github.com/yxKryptonite/RAM_code) |
-| 2024 | Track2Act | [Track2Act: Predicting Point Tracks from Internet Videos enables Generalizable Robot Manipulation](https://arxiv.org/abs/2405.01527) | ECCV | [![link](https://img.shields.io/badge/Website-9cf)](https://homangab.github.io/track2act/) | [![GitHub](https://img.shields.io/badge/GitHub-Track--2--Act-ff8800?logo=github)](https://github.com/homangab/Track-2-Act) |
-| 2023 | VideoDex | [VideoDex: Learning Dexterity from Internet Videos](https://arxiv.org/abs/2212.04498) | CoRL | [![link](https://img.shields.io/badge/Website-9cf)](https://video-dex.github.io/) |  |
-
-### Robot Policy Learning Methods
-
-| Year | Acronym | Paper | Venue | Project | Repo@GitHub |
-|------|---------|-------|-------|---------|-------------|
-| 2019 | Relay Policy Learning | [Relay Policy Learning: Solving Long-Horizon Tasks via Imitation and Reinforcement Learning](https://arxiv.org/abs/1910.11956) | CoRL | [![link](https://img.shields.io/badge/Website-9cf)](https://relay-policy-learning.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-relay--policy--learning-ff8800?logo=github)](https://github.com/google-research/relay-policy-learning) |
-| 2018 | DAPG | [Learning Complex Dexterous Manipulation with Deep Reinforcement Learning and Demonstrations](https://arxiv.org/abs/1709.10087) | RSS | [![link](https://img.shields.io/badge/Website-9cf)](https://sites.google.com/view/deeprl-dexterous-manipulation) | [![GitHub](https://img.shields.io/badge/GitHub-hand_dapg-ff8800?logo=github)](https://github.com/aravindr93/hand_dapg) |
-
-### World Action Models (WAM)
-
-#### Action-Related Data
-
-| Year | Acronym | Paper | Venue | Project | Repo@GitHub |
-|------|---------|-------|-------|---------|-------------|
-| 2026 | RoboWM-Bench | [RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation](https://arxiv.org/abs/2604.19092) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://robowm-bench.github.io/RoboWM-Bench/) | [![GitHub](https://img.shields.io/badge/GitHub-RoboWM--Bench-ff8800?logo=github)](https://github.com/fffstrong/RoboWM-Bench) |
-| 2026 | WorldGym | [WorldGym: World Model as An Environment for Policy Evaluation](https://arxiv.org/abs/2506.00613) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://world-model-eval.github.io) | [![GitHub](https://img.shields.io/badge/GitHub-world--model--eval-ff8800?logo=github)](https://github.com/world-model-eval/world-model-eval) |
-| 2025 | Ctrl-World | [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](https://arxiv.org/abs/2510.10125) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://ctrl-world.github.io) | [![GitHub](https://img.shields.io/badge/GitHub-Ctrl--World-ff8800?logo=github)](https://github.com/Robert-gyj/Ctrl-World) |
-| 2025 | EnerVerse | [EnerVerse: Envisioning Embodied Future Space for Robotics Manipulation](https://arxiv.org/abs/2501.01895) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://sites.google.com/view/enerverse) |  |
-| 2025 | Genie 3 | Genie 3: A new frontier for world models |  | [![link](https://img.shields.io/badge/Website-9cf)](https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/) |  |
-| 2025 | Genie Envisioner (GE) | [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](https://arxiv.org/abs/2508.05635) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://genie-envisioner.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-Genie--Envisioner-ff8800?logo=github)](https://github.com/AgibotTech/Genie-Envisioner) |
-| 2025 | IRASim | [IRASim: A Fine-Grained World Model for Robot Manipulation](https://arxiv.org/abs/2406.14540) | ICCV | [![link](https://img.shields.io/badge/Website-9cf)](https://gen-irasim.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-IRASim-ff8800?logo=github)](https://github.com/bytedance/IRASim) |
-| 2025 | UVA | [Unified Video Action Model](https://arxiv.org/abs/2503.00200) | RSS | [![link](https://img.shields.io/badge/Website-9cf)](https://unified-video-action-model.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-unified_video_action-ff8800?logo=github)](https://github.com/ShuangLI59/unified_video_action) |
-| 2025 | V-JEPA 2 | [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](https://arxiv.org/abs/2506.09985) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://ai.meta.com/research/publications/v-jepa-2-self-supervised-video-models-enable-understanding-prediction-and-planning/) | [![GitHub](https://img.shields.io/badge/GitHub-vjepa2-ff8800?logo=github)](https://github.com/facebookresearch/vjepa2) |
-| 2025 | WorldVLA | [WorldVLA: Towards Autoregressive Action World Model](https://arxiv.org/abs/2506.21539) | arXiv |  | [![GitHub](https://img.shields.io/badge/GitHub-WorldVLA-ff8800?logo=github)](https://github.com/alibaba-damo-academy/WorldVLA) |
-| 2024 | Genie | [Genie: Generative Interactive Environments](https://arxiv.org/abs/2402.15391) | ICML | [![link](https://img.shields.io/badge/Website-9cf)](https://sites.google.com/view/genie-2024/home) |  |
-| 2024 | GR-1 | [Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation](https://arxiv.org/abs/2312.13139) | ICLR | [![link](https://img.shields.io/badge/Website-9cf)](https://gr1-manipulation.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-GR--1-ff8800?logo=github)](https://github.com/bytedance/GR-1) |
-| 2024 | GR-2 | [GR-2: A Generative Video-Language-Action Model with Web-Scale Knowledge for Robot Manipulation](https://arxiv.org/abs/2410.06158) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://gr2-manipulation.github.io/) |  |
-| 2024 | iVideoGPT | [iVideoGPT: Interactive VideoGPTs are Scalable World Models](https://arxiv.org/abs/2405.15223) | NeurIPS | [![link](https://img.shields.io/badge/Website-9cf)](https://thuml.github.io/iVideoGPT/) | [![GitHub](https://img.shields.io/badge/GitHub-iVideoGPT-ff8800?logo=github)](https://github.com/thuml/iVideoGPT) |
-| 2023 | GAIA-1 | [GAIA-1: A Generative World Model for Autonomous Driving](https://arxiv.org/abs/2309.17080) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://wayve.ai/science/gaia/) |  |
-| 2022 | DayDreamer | [DayDreamer: World Models for Physical Robot Learning](https://arxiv.org/abs/2206.14176) | CoRL | [![link](https://img.shields.io/badge/Website-9cf)](https://danijar.com/project/daydreamer/) | [![GitHub](https://img.shields.io/badge/GitHub-daydreamer-ff8800?logo=github)](https://github.com/danijar/daydreamer) |
-
-#### Action-Free Data
-
-| Year | Acronym | Paper | Venue | Project | Repo@GitHub |
-|------|---------|-------|-------|---------|-------------|
-| 2026 | Cosmos 3 | [Cosmos 3: Omnimodal World Models for Physical AI](https://arxiv.org/abs/2606.02800) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://research.nvidia.com/labs/cosmos-lab/cosmos3/) | [![GitHub](https://img.shields.io/badge/GitHub-cosmos-ff8800?logo=github)](https://github.com/NVIDIA/cosmos) |
-| 2026 | Pelican-Unify 1.0 | [Pelican-Unify 1.0: A Unified Embodied Intelligence Model for Understanding, Reasoning, Imagination and Action](https://arxiv.org/abs/2605.15153) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://pelican-unify.github.io/Pelican-unify/) |  |
-| 2024 | UniSim | [Learning Interactive Real-World Simulators](https://arxiv.org/abs/2310.06114) | ICLR | [![link](https://img.shields.io/badge/Website-9cf)](https://universal-simulator.github.io/unisim/) |  |
-| 2023 | UniPi | [Learning Universal Policies via Text-Guided Video Generation](https://arxiv.org/abs/2302.00111) | NeurIPS | [![link](https://img.shields.io/badge/Website-9cf)](https://universal-policy.github.io) |  |
-
-### Embodied Vision-Language Models (VLM)
-
-#### Data for Embodied Understanding
-
-| Year | Acronym | Paper | Venue | Project | Repo@GitHub |
-|------|---------|-------|-------|---------|-------------|
-| 2026 | DreamDojo | [DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos](https://arxiv.org/abs/2602.06949) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://dreamdojo-world.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-DreamDojo-ff8800?logo=github)](https://github.com/NVIDIA/DreamDojo) |
-| 2026 | HY-Embodied-0.5 | [HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents](https://arxiv.org/abs/2604.07430) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://huggingface.co/tencent/HY-Embodied-0.5) | [![GitHub](https://img.shields.io/badge/GitHub-HY--Embodied-ff8800?logo=github)](https://github.com/Tencent-Hunyuan/HY-Embodied) |
-| 2026 | InterLV-Search | [InterLV-Search: Benchmarking Interleaved Multimodal Agentic Search](https://arxiv.org/abs/2605.07510) | arXiv |  | [![GitHub](https://img.shields.io/badge/GitHub-InterLV--Search--Bench-ff8800?logo=github)](https://github.com/hbhalpha/InterLV-Search-Bench) |
-| 2026 | RynnBrain | [RynnBrain: Open Embodied Foundation Models](https://arxiv.org/abs/2602.14979) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://alibaba-damo-academy.github.io/RynnBrain.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-RynnBrain-ff8800?logo=github)](https://github.com/alibaba-damo-academy/RynnBrain) |
-| 2026 | SenseNova-SI | [Scaling Spatial Intelligence with Multimodal Foundation Models](https://arxiv.org/abs/2511.13719) | CVPR |  | [![GitHub](https://img.shields.io/badge/GitHub-SenseNova--SI-ff8800?logo=github)](https://github.com/OpenSenseNova/SenseNova-SI) |
-| 2025 | Cosmos-Predict2.5 | [World Simulation with Video Foundation Models for Physical AI](https://arxiv.org/abs/2511.00062) | arXiv |  | [![GitHub](https://img.shields.io/badge/GitHub-cosmos--predict2.5-ff8800?logo=github)](https://github.com/nvidia-cosmos/cosmos-predict2.5) |
-| 2025 | V-JEPA 2 | [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](https://arxiv.org/abs/2506.09985) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://ai.meta.com/research/vjepa/) | [![GitHub](https://img.shields.io/badge/GitHub-vjepa2-ff8800?logo=github)](https://github.com/facebookresearch/vjepa2) |
-| 2024 | GR-1 | [Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation](https://arxiv.org/abs/2312.13139) | ICLR | [![link](https://img.shields.io/badge/Website-9cf)](https://gr1-manipulation.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-GR--1-ff8800?logo=github)](https://github.com/bytedance/GR-1) |
-
-#### Data for Physical Grounding
-
-| Year | Acronym | Paper | Venue | Project | Repo@GitHub |
-|------|---------|-------|-------|---------|-------------|
-| 2025 | RoboBrain | [RoboBrain: A Unified Brain Model for Robotic Manipulation from Abstract to Concrete](https://arxiv.org/abs/2502.21257) | CVPR | [![link](https://img.shields.io/badge/Website-9cf)](https://superrobobrain.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-RoboBrain-ff8800?logo=github)](https://github.com/FlagOpen/RoboBrain) |
-| 2015 | Pelican-VL 1.0 | [Pelican-VL 1.0: A Foundation Brain Model for Embodied Intelligence](https://arxiv.org/abs/2511.00108) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://pelican-vl.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-pelican--vl-ff8800?logo=github)](https://github.com/Open-X-Humanoid/pelican-vl) |
-
-## Challenges & Future Directions
-
-### Cross-Embodiment State
-
-| Year | Acronym | Paper | Venue | Project | Repo@GitHub |
-|------|---------|-------|-------|---------|-------------|
-| 2026 |  | [Rethinking Visual-Language-Action Model Scaling: Alignment, Mixture, and Regularization](https://arxiv.org/abs/2602.09722) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://research.beingbeyond.com/rethink_vla) | [![GitHub](https://img.shields.io/badge/GitHub-Rethink_VLA-ff8800?logo=github)](https://github.com/BeingBeyond/Rethink_VLA) |
-| 2026 | Qwen-RobotManip | [Qwen-RobotManip Technical Report: Alignment Unlocks Scale for Robotic Manipulation Foundation Models](https://arxiv.org/abs/2606.17846) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://qwen.ai/blog?id=qwen-robotmanip) | [![GitHub](https://img.shields.io/badge/GitHub-Qwen--RobotManip-ff8800?logo=github)](https://github.com/QwenLM/Qwen-RobotManip) |
-| 2025 | CalibAll | [Unify Robot Actions in Camera Frame](https://arxiv.org/abs/2511.17001) | arXiv |  |  |
-
-### Egocentric Priors for Dexterous Hands
-
-| Year | Acronym | Paper | Venue | Project | Repo@GitHub |
-|------|---------|-------|-------|---------|-------------|
-| 2026 | RealDexUMI | [RealDexUMI: A Wearable Universal Manipulation Interface for Dexterous Robot Learning](https://arxiv.org/abs/2606.06033) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://research.beingbeyond.com/realdexumi) |  |
-| 2025 | In-N-On | [In-N-On: Scaling Egocentric Manipulation with in-the-wild and on-task Data](https://arxiv.org/abs/2511.15704) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://xiongyicai.github.io/In-N-On/) | [![GitHub](https://img.shields.io/badge/GitHub-Human0-ff8800?logo=github)](https://github.com/XiongyiCai/Human0) |
-
-### Failure & Recovery-Centric Learning
-
-| Year | Acronym | Paper | Venue | Project | Repo@GitHub |
-|------|---------|-------|-------|---------|-------------|
-| 2025 | AHA | [AHA: A Vision-Language-Model for Detecting and Reasoning Over Failures in Robotic Manipulation](https://arxiv.org/abs/2410.00371) | ICLR | [![link](https://img.shields.io/badge/Website-9cf)](https://aha-vlm.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-AHA-ff8800?logo=github)](https://github.com/NVlabs/AHA) |
-| 2025 | FailSafe | [FailSafe: Reasoning and Recovery from Failures in Vision-Language-Action Models](https://arxiv.org/abs/2510.01642) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://jimntu.github.io/FailSafe/) | [![GitHub](https://img.shields.io/badge/GitHub-FailSafe_code-ff8800?logo=github)](https://github.com/Jimntu/FailSafe_code) |
-| 2025 | Guardian | [Guardian: Detecting Robotic Planning and Execution Errors with Vision-Language Models](https://arxiv.org/abs/2512.01946) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://www.di.ens.fr/willow/research/guardian/) | [![GitHub](https://img.shields.io/badge/GitHub-Guardian--FailCot-ff8800?logo=github)](https://github.com/paulpacaud/Guardian-FailCot) |
-| 2025 | I-FailSense | [I-FailSense: Towards General Robotic Failure Detection with Vision-Language Models](https://arxiv.org/abs/2509.16072) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://clemgris.github.io/I-FailSense/) | [![GitHub](https://img.shields.io/badge/GitHub-I--FailSense-ff8800?logo=github)](https://github.com/clemgris/I-FailSense) |
-| 2025 | RACER | [RACER: Rich Language-Guided Failure Recovery Policies for Imitation Learning](https://arxiv.org/abs/2409.14674) | ICRA | [![link](https://img.shields.io/badge/Website-9cf)](https://rich-language-failure-recovery.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-RACER-ff8800?logo=github)](https://github.com/sled-group/RACER) |
-| 2025 | RoboFAC | [RoboFAC: A Comprehensive Framework for Robotic Failure Analysis and Correction](https://arxiv.org/abs/2505.12224) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://huggingface.co/datasets/MINT-SJTU/RoboFAC-dataset) | [![GitHub](https://img.shields.io/badge/GitHub-RoboFAC-ff8800?logo=github)](https://github.com/MINT-SJTU/RoboFAC) |
-| 2025 | SSDF | [Learning from Imperfect Demonstrations with Self-Supervision for Robotic Manipulation](https://arxiv.org/abs/2401.08957) | ICRA |  |  |
-| 2025 | ViFailback | [Diagnose, Correct, and Learn from Manipulation Failures via Visual Symbols](https://arxiv.org/abs/2512.02787) | arXiv | [![link](https://img.shields.io/badge/Website-9cf)](https://x1nyuzhou.github.io/vifailback.github.io/) | [![GitHub](https://img.shields.io/badge/GitHub-ViFailback-ff8800?logo=github)](https://github.com/x1nyuzhou/ViFailback) |
-
-### Data Recipe
-
-| Year | Acronym | Paper | Venue | Project | Repo@GitHub |
-|------|---------|-------|-------|---------|-------------|
-| 2015 | AVI-HT | [AVI-HT: Adaptive Vision-IMU Fusion for 3D Hand Tracking](https://arxiv.org/abs/2605.21714) | arXiv |  |  |
+| Time | Method | Institution | Model | Data |
+|------|--------|-------------|-------|------|
+| 2023.3 | PaLM-E | Google | VLA | Real / Sim / General |
+| 2023.7 | RT-2 | DeepMind | VLA | Real / General |
+| 2024.5 | Octo | UC Berkeley | VLA | Real |
+| 2024.6 | OpenVLA | Stanford University | VLA | Real |
+| 2024.10 | GR-2 | ByteDance | VLA | Real / Ego |
+| 2024.10 | π0 | Physical Intelligence | VLA | Real |
+| 2024.10 | RDT-1B | THU | VLA | Real |
+| 2024.11 | CogACT | THU | VLA | Real |
+| 2025.1 | SpatialVLA | Shanghai AI Lab | VLA | Real |
+| 2025.1 | UP-VLA | THU | VLA | Real / General |
+| 2025.3 | HybridVLA | PKU | VLA | Real |
+| 2025.3 | GR00T N1 | NVIDIA | VLA | Real / Ego / Sim |
+| 2025.3 | CoT-VLA | NVIDIA | VLA | Real / Ego / General |
+| 2025.4 | UWM | University of Washington | WAM | Real |
+| 2025.4 | π0.5 | Physical Intelligence | VLA | Real / General |
+| 2025.5 | UniVLA | HKU | VLA | Real / Ego |
+| 2025.6 | SmolVLA | Hugging Face | VLA | Real |
+| 2025.6 | GR00T N1.5 | NVIDIA | VLA | Real / Sim |
+| 2025.7 | DreamVLA | SJTU | VLA | Real / Sim |
+| 2025.7 | EgoVLA | UC San Diego | VLA | Ego |
+| 2025.7 | Being-H0 | PKU | VLA | Ego |
+| 2025.7 | GR-3 | ByteDance Seed | VLA | Real / Ego / General |
+| 2025.7 | H-RDT | THU | VLA | Ego |
+| 2025.8 | GalaxeaVLA(G0) | Galaxea | VLA | Real |
+| 2025.8 | ReconVLA | HKUST | VLA | Real / Sim |
+| 2025.9 | RynnVLA-001 | DAMO | VLA | Real / Ego |
+| 2025.10 | X-VLA | THU | VLA | Real |
+| 2025.10 | InternVLA-M1 | Shanghai AI Lab | VLA | Real / Sim / General |
+| 2025.10 | VITRA | THU | VLA | Ego |
+| 2025.11 | METIS | PKU | VLA | Real / Ego |
+| 2025.12 | VideoVLA | XJTU | VLA | Real |
+| 2025.12 | Motus | THU | WAM | Real / Ego / Sim / General |
+| 2025.12 | GR00T N1.6 | NVIDIA | VLA | Real / Sim |
+| 2026.1 | InternVLA-A1 | Shanghai AI Lab | VLA | Real / Ego / Sim |
+| 2026.1 | LaST_0 | PKU | VLA | Real |
+| 2026.1 | Being-H0.5 | BeingBeyond | VLA | Real / Ego / Sim / General |
+| 2026.1 | LingbotVLA | Ant Group | VLA | Real |
+| 2026.1 | LingbotVA | Ant Group | WAM | Real / UMI / Sim |
+| 2026.2 | RDT2 | THU | VLA | UMI / General |
+| 2026.2 | Xiaomi-Robotics-0 | Xiaomi | VLA | Real / General |
+| 2026.2 | ABot-M0 | AMAP CV Lab | VLA | Real |
+| 2026.2 | DM0 | Dexmal | VLA | Real / Sim / General |
+| 2026.2 | LDA-1B | PKU | WAM | Real / Ego / Sim |
+| 2026.2 | DreamZero | NVIDIA | WAM | Real |
+| 2026.2 | EgoScale | NVIDIA | VLA | Real / Ego |
+| 2026.3 | GigaWorld-Policy | GigaAI | WAM | Real / Ego / General |
+| 2026.3 | UniDex | THU | VLA | Ego |
+| 2026.4 | JoyAI-RA 0.1 | JD | VLA | Real / Ego / Sim / General |
+| 2026.4 | π0.7 | Physical Intelligence | VLA | Real / Ego / General |
+| 2026.4 | GR00T N1.7 | NVIDIA | VLA | Real / Ego / Sim |
+| 2026.4 | Being-H0.7 | BeingBeyond | WAM | Real / Ego / Sim / General |
+| 2026.4 | MotuBrain | Shengshu | WAM | Real / Ego / General |
+| 2026.5 | Qwen-VLA | Qwen | VLA | Real / Ego / Sim / General |
+| 2026.5 | Wall-OSS-0.5 | X Square Robot | VLA | Real / General |
+| 2026.6 | Wall-WM | X Square Robot | WAM | Real / Ego / UMI / General |
+| 2026.6 | LaST-HD | PKU | VLA | Real / Ego |
+| 2026.6 | Hy-Embodied-0.5-VLA | Tencent Robotics X | VLA | UMI |
+| 2026.6 | Qwen-RobotManip | Qwen | VLA | Real / Ego / Sim / General |
+| 2026.7 | ABot-M0.5 | AMAP CV Lab | WAM | Real / Sim |
+| 2026.7 | ACE-Brain-0.5 | ACE-Robotics | VLA | Real / General |
+| 2026.7 | InternVLA-A1.5 | Shanghai AI Lab | VLA | Real / UMI / Sim / General |
+| 2026.7 | LingbotVLA 2.0 | Ant Group | VLA | Real / Ego |
+| 2026.7 | LingbotVA 2.0 | Ant Group | WAM | Real / Ego / UMI / Sim / General |
+| 2026.7 | HumanScale | PKU | WAM | Ego |
+| 2026.7 | GigaWorld-Policy-0.5 | GigaAI | WAM | Real |
+| 2026.7 | Xiaomi-Robotics-1 | Xiaomi | VLA | Real / UMI / General |
 
 ---
 
