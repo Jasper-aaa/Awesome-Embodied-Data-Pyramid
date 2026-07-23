@@ -512,6 +512,9 @@ Representative VLA and WAM methods by release time, model type, institution, and
 
 Data sources: `Real` = real-robot data; `Ego` = egocentric data; `UMI` = UMI data; `Sim` = simulation data; `General` = general data.
 
+<details open>
+<summary>Representative VLA and WAM methods table (66 entries)</summary>
+
 | Time | Method | Institution | Model | Data |
 |------|--------|-------------|-------|------|
 | 2023.3 | PaLM-E | Google | VLA | Real / Sim / General |
@@ -580,6 +583,8 @@ Data sources: `Real` = real-robot data; `Ego` = egocentric data; `UMI` = UMI dat
 | 2026.7 | HumanScale | PKU | WAM | Ego |
 | 2026.7 | GigaWorld-Policy-0.5 | GigaAI | WAM | Real |
 | 2026.7 | Xiaomi-Robotics-1 | Xiaomi | VLA | Real / UMI / General |
+
+</details>
 
 ---
 
