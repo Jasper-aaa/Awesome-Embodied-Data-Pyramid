@@ -12,11 +12,72 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 
 ## Table of Contents
 
-**Data Sources:** [Real-Robot](#real-robot-data) · [UMI](#umi-data) · [Simulation](#simulation-data) · [Ego/Ego-Exo](#egocentric--ego-exo-data) · [General](#general-data)
+<details>
+<summary><strong>Data Sources</strong></summary>
 
-**Methods:** [Representative VLA and WAM Methods](#representative-vla-and-wam-methods)
+- [The Data Pyramid: Data Sources](#the-data-pyramid-data-sources)
 
-**Community:** [Contributing](#contributing)
+<details>
+<summary>Real-Robot Data</summary>
+
+- [Real-Robot Data](#real-robot-data)
+- Table: recent real-robot datasets
+- Foldout table: more entries (2024 and earlier)
+
+</details>
+
+<details>
+<summary>UMI Data</summary>
+
+- [UMI Data](#umi-data)
+- Table: UMI-style robot-free and cross-embodiment datasets
+
+</details>
+
+<details>
+<summary>Simulation Data</summary>
+
+- [Simulation Data](#simulation-data)
+- [3D Assets & Scene Datasets](#3d-assets--scene-datasets)
+- [Simulation & Rendering Backends](#simulation--rendering-backends)
+- [Benchmarks](#benchmarks)
+- [Simulation/Synthetic Datasets & Data-Generation Systems](#simulationsynthetic-datasets--data-generation-systems)
+- [World Models as Simulators](#world-models-as-simulators)
+
+</details>
+
+<details>
+<summary>Egocentric & Ego-Exo Data</summary>
+
+- [Egocentric & Ego-Exo Data](#egocentric--ego-exo-data)
+- Table: egocentric and ego-exo human data
+- Foldout table: more entries (2024 and earlier)
+
+</details>
+
+<details>
+<summary>General Data</summary>
+
+- [General Data](#general-data)
+- [Visual Data](#visual-data)
+- [Segmentation & Localization](#segmentation--localization)
+- [Video & Temporal Data](#video--temporal-data)
+- [Planning / Task Decomposition](#planning--task-decomposition)
+- [Grasp Data](#grasp-data)
+
+</details>
+
+</details>
+
+<details>
+<summary><strong>Embodied Foundation Models</strong></summary>
+
+- [Embodied Foundation Models](#embodied-foundation-models)
+- [Representative VLA and WAM Methods](#representative-vla-and-wam-methods)
+
+</details>
+
+- [Contributing](#contributing)
 
 ## The Data Pyramid: Data Sources
 
@@ -443,7 +504,9 @@ This repository accompanies a survey on the **data pyramid** for robotics and em
 | 2018 | Jacquard | [Jacquard: A Large Scale Dataset for Robotic Grasp Detection](https://arxiv.org/abs/1803.11469) | IROS | [![link](https://img.shields.io/badge/Website-9cf)](https://jacquard.liris.cnrs.fr) |  |
 |  | GraspNet-1Billion | [GraspNet-1Billion: A Large-Scale Benchmark for General Object Grasping](https://openaccess.thecvf.com/content_CVPR_2020/html/Fang_GraspNet-1Billion_A_Large-Scale_Benchmark_for_General_Object_Grasping_CVPR_2020_paper.html) |  | [![link](https://img.shields.io/badge/Website-9cf)](https://graspnet.net) | [![GitHub](https://img.shields.io/badge/GitHub-graspnet--baseline-ff8800?logo=github)](https://github.com/graspnet/graspnet-baseline) |
 
-## Representative VLA and WAM Methods
+## Embodied Foundation Models
+
+### Representative VLA and WAM Methods
 
 Representative VLA and WAM methods by release time, model type, institution, and data source.
 
